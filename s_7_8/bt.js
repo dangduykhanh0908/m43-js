@@ -18,8 +18,6 @@ let a = 0;
     addsv();
 }
 
-
-
 let addsv = () => {
     const div = document.createElement("div");
     div.id = a;
