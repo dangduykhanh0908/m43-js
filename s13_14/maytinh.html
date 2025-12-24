@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="manhinh">
+            <input type="text" name="result" id="result" disabled>
+            <i class="fa-solid fa-rotate-right his"></i>
+            <div class="history hiss" >
+                <h3>Lịch sử</h3>
+                <ul id="historyList"></ul>
+            </div>
+            <i id="backspace" class="fa-solid fa-delete-left icon hidden" onclick="deleteOne()"></i>
+        </div>
+        <div class="banphim">
+            <button onclick="press('7')">7</button>
+            <button onclick="press('8')">8</button>
+            <button onclick="press('9')">9</button>
+            <button onclick="press('/')">/</button>
+        </div>
+        <div class="banphim">
+            <button onclick="press('4')">4</button>
+            <button onclick="press('5')">5</button>
+            <button onclick="press('6')">6</button>
+            <button onclick="press('*')">*</button>
+        </div>
+        <div class="banphim">
+            <button onclick="press('1')">1</button>
+            <button onclick="press('2')">2</button>
+            <button onclick="press('3')">3</button>
+            <button onclick="press('-')">-</button>
+        </div>
+        <div class="banphim">
+            <button onclick="press('0')">0</button>
+            <button onclick="clearAll()">C</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="press('+')">+</button>
+        </div>
+
+    </div>
+
+    <script src="maincal.js"></script>
+</body>
+
+</html>
